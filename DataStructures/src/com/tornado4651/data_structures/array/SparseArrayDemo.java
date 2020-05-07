@@ -1,4 +1,4 @@
-package com.tornado4651.data_structures.sparse_array;
+package com.tornado4651.data_structures.array;
 
 
 public class SparseArrayDemo {
