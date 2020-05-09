@@ -1,6 +1,6 @@
 package com.tornado4651.design_pattern.principle.interface_segregation;
 
-public class Segregation2 {
+public class InterfaceSegregation2 {
     public static void main(String[] args) {
         A2 a = new A2();
         a.depend1(new B2());

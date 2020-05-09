@@ -1,4 +1,4 @@
-package com.tornado4651.design_pattern.principle.singleresponsibility;
+package com.tornado4651.design_pattern.principle.single_responsibility;
 
 public class SingleResponsibility1 {
     public static void main(String[] args) {
