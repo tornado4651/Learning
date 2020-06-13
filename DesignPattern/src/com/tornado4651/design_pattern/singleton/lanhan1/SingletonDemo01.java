@@ -1,5 +1,8 @@
 package com.tornado4651.design_pattern.singleton.lanhan1;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class SingletonDemo01 {
     public static void main(String[] args) {
         // 在使用Singleton的方法时，已经实例化了Singleton类
@@ -8,6 +11,7 @@ public class SingletonDemo01 {
         Singleton instance2 = Singleton.getInstance();
         System.out.println(instance.hashCode());
         System.out.println(instance2.hashCode());
+        List ls = new ArrayList();
 
     }
 }
