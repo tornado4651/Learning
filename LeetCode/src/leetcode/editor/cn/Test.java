@@ -1,6 +1,8 @@
 package leetcode.editor.cn;
 
-
+/**
+ *  测试验证代码：
+ */
 class Parent{
     int i = 100;
 }
