@@ -8,5 +8,11 @@
     <artifactId>DataStructures</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <parent>
+        <groupId>com.tornado4651</groupId>
+        <artifactId>Learning</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
     
 </project>
