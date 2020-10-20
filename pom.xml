@@ -13,6 +13,7 @@
         <module>DataStructures</module>
         <module>DesignPattern</module>
         <module>JavaBase</module>
+        <module>EsAndHbase</module>
     </modules>
 
     <dependencyManagement>
