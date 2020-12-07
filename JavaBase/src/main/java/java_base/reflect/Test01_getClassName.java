@@ -1,8 +1,8 @@
-package java_base.invoke;
+package java_base.reflect;
 
-import java_base.invoke.beans.Address;
-import java_base.invoke.beans.Person;
-import java_base.invoke.beans.Student;
+import java_base.reflect.beans.Address;
+import java_base.reflect.beans.Person;
+import java_base.reflect.beans.Student;
 import org.junit.Test;
 
 import java.lang.reflect.Constructor;
@@ -34,7 +34,7 @@ public class Test01_getClassName {
         Class<?> invocation2 = null;
         Class<?> invocation3 = null;
         try {// 最常用的方法
-            invocation1 = Class.forName("java_base.invoke.beans.Person");
+            invocation1 = Class.forName("java_base.reflect.beans.Person");
         } catch (Exception ex) {
             ex.printStackTrace();
         }
@@ -53,7 +53,7 @@ public class Test01_getClassName {
     @Test
     public void getInstanceTest() {
         try {
-            Class<?> personInvocation = Class.forName("java_base.invoke.beans.Person");
+            Class<?> personInvocation = Class.forName("java_base.reflect.beans.Person");
             Person person = (Person) personInvocation.newInstance();
             person.setAge(20);
             person.setName("Tornado4651");
@@ -71,7 +71,7 @@ public class Test01_getClassName {
     @Test
     public void testConstruct() {
         try {
-            Class<?> personInvocation = Class.forName("java_base.invoke.beans.Person");
+            Class<?> personInvocation = Class.forName("java_base.reflect.beans.Person");
             Constructor<?>[] cons = personInvocation.getConstructors();
             System.out.println("遍历使用'.getConstructors()'获得的构造器数组：");
             for (int i = 0; i < cons.length; i++) {
@@ -89,7 +89,7 @@ public class Test01_getClassName {
     @Test
     public void constructGetInstance() {
         try {
-            Class<?> personInvocation = Class.forName("java_base.invoke.beans.Person");
+            Class<?> personInvocation = Class.forName("java_base.reflect.beans.Person");
             Constructor<?>[] cons = personInvocation.getConstructors();
             Constructor constructor = cons[1];
             System.out.println("对所有构造方法中的第二个进行具体属性解析：\n【" + constructor + "】");
@@ -110,7 +110,7 @@ public class Test01_getClassName {
      */
     @Test
     public void testGetInterfaces() throws ClassNotFoundException, InvocationTargetException, IllegalAccessException, InstantiationException {
-        Class<?> studentClass = Class.forName("java_base.invoke.beans.Student");
+        Class<?> studentClass = Class.forName("java_base.reflect.beans.Student");
         Class<?>[] interfaces = studentClass.getInterfaces();
         System.out.println("遍历studentClass反射类的所有接口：" + interfaces.toString());
         for (Class c : interfaces) {
@@ -137,7 +137,7 @@ public class Test01_getClassName {
      */
     @Test
     public void testGetSuperclass() throws ClassNotFoundException, InvocationTargetException, IllegalAccessException, InstantiationException {
-        Class<?> dogsClass = Class.forName("java_base.invoke.beans.Dogs");
+        Class<?> dogsClass = Class.forName("java_base.reflect.beans.Dogs");
         Class<?> dogSuperclass = dogsClass.getSuperclass();
         System.out.println("Dogs的父类是：【" + dogSuperclass.toString() + "】");
         System.out.println("调用Dogs的方法：");
@@ -160,7 +160,7 @@ public class Test01_getClassName {
      */
     @Test
     public void tsetGetFilds() throws ClassNotFoundException {
-        Class<?> invokeClass = Class.forName("java_base.invoke.beans.Person");
+        Class<?> invokeClass = Class.forName("java_base.reflect.beans.Person");
         Field[] fields = invokeClass.getFields();
         System.out.println("这是使用'.getFields()'获得的所有属性：");
         for (Field field : fields) {
