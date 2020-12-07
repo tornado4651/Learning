@@ -1,4 +1,4 @@
-package java_base.invoke.beans;
+package java_base.reflect.beans;
 
 public interface AtHome {
     public void doHomeWork();

@@ -1,4 +1,4 @@
-package java_base.invoke.beans;
+package java_base.reflect.beans;
 
 public class Address {
     public String City;
