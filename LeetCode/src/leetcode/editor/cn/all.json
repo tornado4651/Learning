@@ -1,15 +1,15 @@
 [
   {
     "articleLive": 2,
-    "formTitle": "[321]拼接最大数",
-    "frontendQuestionId": "321",
+    "formTitle": "[649]Dota2 参议院",
+    "frontendQuestionId": "649",
     "leaf": true,
-    "level": 3,
+    "level": 2,
     "nodeType": "def",
-    "questionId": "321",
+    "questionId": "649",
     "status": "",
-    "title": "拼接最大数",
-    "titleSlug": "create-maximum-number"
+    "title": "Dota2 参议院",
+    "titleSlug": "dota2-senate"
   },
   {
     "articleLive": 2,
@@ -3853,6 +3853,18 @@
   },
   {
     "articleLive": 2,
+    "formTitle": "[321]拼接最大数",
+    "frontendQuestionId": "321",
+    "leaf": true,
+    "level": 3,
+    "nodeType": "def",
+    "questionId": "321",
+    "status": "",
+    "title": "拼接最大数",
+    "titleSlug": "create-maximum-number"
+  },
+  {
+    "articleLive": 2,
     "formTitle": "[322]零钱兑换",
     "frontendQuestionId": "322",
     "leaf": true,
@@ -6697,14 +6709,14 @@
   },
   {
     "articleLive": 2,
-    "formTitle": "[559]N叉树的最大深度",
+    "formTitle": "[559]N 叉树的最大深度",
     "frontendQuestionId": "559",
     "leaf": true,
     "level": 1,
     "nodeType": "def",
     "questionId": "774",
     "status": "",
-    "title": "N叉树的最大深度",
+    "title": "N 叉树的最大深度",
     "titleSlug": "maximum-depth-of-n-ary-tree"
   },
   {
@@ -7774,18 +7786,6 @@
     "status": "",
     "title": "单词替换",
     "titleSlug": "replace-words"
-  },
-  {
-    "articleLive": 2,
-    "formTitle": "[649]Dota2 参议院",
-    "frontendQuestionId": "649",
-    "leaf": true,
-    "level": 2,
-    "nodeType": "def",
-    "questionId": "649",
-    "status": "",
-    "title": "Dota2 参议院",
-    "titleSlug": "dota2-senate"
   },
   {
     "articleLive": 2,
@@ -12112,7 +12112,7 @@
     "formTitle": "[1010]总持续时间可被 60 整除的歌曲",
     "frontendQuestionId": "1010",
     "leaf": true,
-    "level": 1,
+    "level": 2,
     "nodeType": "def",
     "questionId": "1055",
     "status": "",
@@ -19981,15 +19981,15 @@
   },
   {
     "articleLive": 2,
-    "formTitle": "[1666]Change the Root of a Binary Tree",
+    "formTitle": "[1666]改变二叉树的根节点",
     "frontendQuestionId": "1666",
     "leaf": true,
     "level": 2,
     "nodeType": "def",
     "questionId": "1810",
     "status": "lock",
-    "title": "Change the Root of a Binary Tree",
-    "titleSlug": "flip-binary-tree"
+    "title": "改变二叉树的根节点",
+    "titleSlug": "change-the-root-of-a-binary-tree"
   },
   {
     "articleLive": 2,
@@ -20098,6 +20098,90 @@
     "status": "",
     "title": "数组的最小偏移量",
     "titleSlug": "minimize-deviation-in-array"
+  },
+  {
+    "articleLive": 2,
+    "formTitle": "[1676]Lowest Common Ancestor of a Binary Tree IV",
+    "frontendQuestionId": "1676",
+    "leaf": true,
+    "level": 2,
+    "nodeType": "def",
+    "questionId": "1816",
+    "status": "lock",
+    "title": "Lowest Common Ancestor of a Binary Tree IV",
+    "titleSlug": "lowest-common-ancestor-of-a-binary-tree-iv"
+  },
+  {
+    "articleLive": 2,
+    "formTitle": "[1677]Product's Worth Over Invoices",
+    "frontendQuestionId": "1677",
+    "leaf": true,
+    "level": 1,
+    "nodeType": "def",
+    "questionId": "1821",
+    "status": "lock",
+    "title": "Product's Worth Over Invoices",
+    "titleSlug": "products-worth-over-invoices"
+  },
+  {
+    "articleLive": 2,
+    "formTitle": "[1678]设计 Goal 解析器",
+    "frontendQuestionId": "1678",
+    "leaf": true,
+    "level": 1,
+    "nodeType": "def",
+    "questionId": "1797",
+    "status": "",
+    "title": "设计 Goal 解析器",
+    "titleSlug": "goal-parser-interpretation"
+  },
+  {
+    "articleLive": 2,
+    "formTitle": "[1679]K 和数对的最大数目",
+    "frontendQuestionId": "1679",
+    "leaf": true,
+    "level": 2,
+    "nodeType": "def",
+    "questionId": "1798",
+    "status": "",
+    "title": "K 和数对的最大数目",
+    "titleSlug": "max-number-of-k-sum-pairs"
+  },
+  {
+    "articleLive": 2,
+    "formTitle": "[1680]连接连续二进制数字",
+    "frontendQuestionId": "1680",
+    "leaf": true,
+    "level": 2,
+    "nodeType": "def",
+    "questionId": "1800",
+    "status": "",
+    "title": "连接连续二进制数字",
+    "titleSlug": "concatenation-of-consecutive-binary-numbers"
+  },
+  {
+    "articleLive": 2,
+    "formTitle": "[1681]最小不兼容性",
+    "frontendQuestionId": "1681",
+    "leaf": true,
+    "level": 3,
+    "nodeType": "def",
+    "questionId": "1799",
+    "status": "",
+    "title": "最小不兼容性",
+    "titleSlug": "minimum-incompatibility"
+  },
+  {
+    "articleLive": 2,
+    "formTitle": "[1682]Longest Palindromic Subsequence II",
+    "frontendQuestionId": "1682",
+    "leaf": true,
+    "level": 2,
+    "nodeType": "def",
+    "questionId": "1822",
+    "status": "lock",
+    "title": "Longest Palindromic Subsequence II",
+    "titleSlug": "longest-palindromic-subsequence-ii"
   },
   {
     "articleLive": 2,

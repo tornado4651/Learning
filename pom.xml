@@ -15,6 +15,7 @@
         <module>JavaBase</module>
         <module>EsAndHbase</module>
         <module>Zookeeper</module>
+        <module>Spring</module>
     </modules>
 
     <dependencyManagement>

@@ -31,16 +31,16 @@ package leetcode.editor.cn;
  * 直到全部替换完成
  */
 //leetcode submit region begin(Prohibit modification and deletion)
-class Solution {
+class Solution16_11 {
     public int[] divingBoard(int shorter, int longer, int k) {
         // 特殊情况，直接返回
-        if(shorter == longer)
-            return new int[]{k*shorter};
+        if (shorter == longer)
+            return new int[]{k * shorter};
         // 因为按照思路可以确定长度，所以直接初始化
-        int result[] = new int[k+1];
+        int result[] = new int[k + 1];
         // 从k个shorter情况开始替换
         for (int i = 0; i <= k; i++) {
-            result[i] = shorter*(k-i) + longer*i;
+            result[i] = shorter * (k - i) + longer * i;
         }
         return result;
     }

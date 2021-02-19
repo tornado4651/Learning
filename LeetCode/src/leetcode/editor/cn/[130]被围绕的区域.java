@@ -36,17 +36,17 @@ package leetcode.editor.cn;
  * 最后，将第一步独立区分的边界'#'变回成'O'即可
  */
 //leetcode submit region begin(Prohibit modification and deletion)
-class Solution {
+class Solution1 {
     public void solve(char[][] board) {
         // 首先取得矩阵的行m和列n
         int n = board.length;// 行
-        if(n<1)
+        if (n < 1)
             return;
         int m = board[0].length;// 列
         // 开始对上下边的'O'转换成'#'
         for (int i = 0; i < m; i++) {
-            fill(0,i,board,n,m);
-            fill(n-1,i,board,n,m);
+            fill(0, i, board, n, m);
+            fill(n - 1, i, board, n, m);
         }
         // 对左右两列的边界'O'及其相邻转换填充
         for (int i = 1; i < n; i++) {

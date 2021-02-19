@@ -25,15 +25,14 @@ package leetcode.editor.cn;
 
 
 //leetcode submit region begin(Prohibit modification and deletion)
-class Solution {
+class Solution43 {
     public String multiply(String num1, String num2) {
-        if("0".equals(num1) && "0".equals(num2)){
+        if ("0".equals(num1) && "0".equals(num2)) {
             return "0";
         }
         int length1 = num1.length();
         int length2 = num2.length();
 
-        
 
         return null;
     }

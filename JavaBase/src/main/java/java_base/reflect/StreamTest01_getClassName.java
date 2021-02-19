@@ -10,7 +10,7 @@ import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
-public class Test01_getClassName {
+public class StreamTest01_getClassName {
 
     /**
      * 一、获得反射类的基础信息：名称和包信息等。
