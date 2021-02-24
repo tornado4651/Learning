@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--
+        构造器直接注入法：
+            最为简便，且Spring默认，只需指定id和对应的bean的类路径，且该bean具有空构造器时，即可使用
+            id：bean的唯一名称
+            class：bean的类路径
+    -->
+    <bean id="user" class="com.tornado4651.spring.ioc.entity.User"/>
+</beans>

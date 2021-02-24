@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--
+        实例化工厂创建法：
+            首先将工厂类实例化，再通过实例好的工厂对象中的具体方法创建bean
+            id: bean的唯一标识
+            factory-bean：已经实例化好的工厂bean
+            factory-method：工厂类中要调用的具体实例化方法
+    -->
+    <bean id="instanceFactory" class="com.tornado4651.spring.ioc.factory.InstanceFactory"/>
+    <bean id="user" factory-bean="instanceFactory" factory-method="createUser"/>
+
+</beans>

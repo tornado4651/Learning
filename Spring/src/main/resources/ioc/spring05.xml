@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="userDao" class="com.tornado4651.spring.ioc.dao.UserDao">
+        <constructor-arg name="userService" ref="userService"/>
+    </bean>
+    <!--
+        依赖注入（手动注入）——构造器注入：
+            使用set方法对UserService中依赖的UserDao进行注入：
+            property标签：指定bean中的依赖成员变量
+                name: 指定成员变量
+                ref：指定依赖的bean对象，将其注入
+                value: 指定依赖的基本数据类型成员变量初始化值，很少用到
+                index：如果有多个依赖，在利用构造器构造时，防止名称或顺序混乱，使用index排序。
+    -->
+    <bean id="userService" class="com.tornado4651.spring.ioc.service.UserService">
+        <constructor-arg name="userDao" ref="userDao"/>
+    </bean>
+
+</beans>

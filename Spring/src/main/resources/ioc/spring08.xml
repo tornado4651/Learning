@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans  http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
+
+    <!--  测试bean的作用域 与 生命周期  -->
+
+    <!--  1、创建bean,默认情况下均为单例  -->
+    <bean name="accountDao" class="com.tornado4651.spring.ioc.dao.AccountDao" scope="singleton"/>
+    <!-- 2、创建bean，在scope属性中指定prototype,表示原型作用域 -->
+    <bean name="accountService" class="com.tornado4651.spring.ioc.service.AccountService" scope="prototype"/>
+</beans>

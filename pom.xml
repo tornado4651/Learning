@@ -16,6 +16,7 @@
         <module>EsAndHbase</module>
         <module>Zookeeper</module>
         <module>Spring</module>
+        <module>SpringMVC</module>
     </modules>
 
     <dependencyManagement>

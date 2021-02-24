@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--
+        静态工厂创建法：
+            class属性不再指定具体的pojo类，而是指定为静态工厂类，并使用actory-method静态方法创建
+            id: bean的唯一标识，自定义
+            class: 指定为自己创建的静态工厂类
+            factory-method: 指定使用静态工厂类中的哪个创建bean方法
+    -->
+    <bean id="user" class="com.tornado4651.spring.ioc.factory.StaticFactory" factory-method="createUser"/>
+
+</beans>
