@@ -3,6 +3,7 @@ spring:
     name: Spring-Boot-Learning
   profiles:
     active: prod
+  # 自定义配置mvc静态资源路径
   mvc:
     static-path-pattern: /static/, /public/
   # 数据源配置
@@ -21,6 +22,18 @@ spring:
   thymeleaf:
     prefix: classpath:/html/
     cache: false
+  # 开启缓存
+  cache:
+    ehcache:
+      config: classpath:ehcache.xml
+  # 配置热部署
+  devtools:
+    restart:
+      # 设置重启目录
+      additional-paths: src/main/java
+      # 解决项目重新编译后接口报404的问题
+      poll-interval: 3000
+      quiet-period: 1000
 server:
   port: 8080
 
