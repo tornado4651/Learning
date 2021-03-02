@@ -1,6 +1,6 @@
 package elasticsearch;
 
-import com.tornado4651.elasticsearch.utils.ESClient;
+import elasticsearch.utils.ESClient;
 import org.elasticsearch.action.admin.indices.create.CreateIndexRequest;
 import org.elasticsearch.action.admin.indices.create.CreateIndexResponse;
 import org.elasticsearch.client.RequestOptions;
