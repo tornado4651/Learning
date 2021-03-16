@@ -93,6 +93,12 @@
             <optional>true</optional>
         </dependency>
 
+        <!--    日志依赖    -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+
 
     </dependencies>
 
